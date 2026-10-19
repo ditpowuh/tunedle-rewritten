@@ -10,7 +10,7 @@ import Countdown from "@/components/Countdown";
 
 import ShareIcon from "@/assets/share.svg?react";
 
-import {config, getRandomMessage, createShareText} from "@/lib/game";
+import {config, resultMessages, getRandomMessage, createShareText} from "@/lib/game";
 
 import type {Guess} from "@/types/game";
 
@@ -21,23 +21,11 @@ interface ResultPanelProps {
 
 export default function ResultPanel({guessList, gotCorrect}: ResultPanelProps) {
   const [copied, setCopied] = useState<boolean>(false);
-  const [message] = useState(() => getRandomMessage(gotCorrect ? correctMessages : didNotGetCorrectMessages));
+  const [message] = useState(() => getRandomMessage(gotCorrect ? resultMessages.successful : resultMessages.failed));
 
   const [_, copyToClipboard] = useCopyToClipboard();
 
   useTimeout(() => setCopied(false), copied ? 2000 : null);
-
-  const correctMessages: string[] = [
-    "Woohoo!",
-    "Great job!",
-    "Nice work!"
-  ];
-
-  const didNotGetCorrectMessages: string[] = [
-    "Good effort!",
-    "Better luck next time!",
-    "So close!"
-  ];
 
   let sentence: string;
   if (!gotCorrect) {
