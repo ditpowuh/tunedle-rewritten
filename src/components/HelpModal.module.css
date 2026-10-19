@@ -1,0 +1,33 @@
+.row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.iconwrap {
+  margin-right: 1rem;
+  width: 2rem;
+  color: #888888;
+}
+
+.iconmusic {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+.iconspeaker {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.iconthumb {
+  width: 1.75rem;
+  height: 1.5rem;
+}
+
+.playwrap {
+  justify-content: center;
+  display: flex;
+  padding: 0.5rem 0;
+  margin-top: 0.5rem;
+}

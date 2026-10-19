@@ -1,0 +1,30 @@
+.button {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.25rem;
+  background: transparent;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.125em;
+  text-indent: 0.25em;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+}
+
+.button:active {
+  background: #dddddd;
+}
+
+.primary {
+  background: #71c778;
+}
+
+.secondary {
+  background: #444444;
+}

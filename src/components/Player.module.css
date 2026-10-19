@@ -1,0 +1,206 @@
+.player {
+  display: flex;
+  flex-direction: column;
+}
+
+.hidden {
+  display: none;
+}
+
+.icon24 {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.loadingbox {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-align: center;
+  color: #888888;
+  padding: 1.5rem;
+}
+
+.errortext {
+  margin: 0 0 0.75rem;
+}
+
+.errorbuttonwrap {
+  display: flex;
+  justify-content: center;
+}
+
+.blockedwrap {
+  max-width: 40rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 0.75rem;
+}
+
+.blockedcard {
+  padding: 0.75rem;
+  margin-bottom: 0.75rem;
+  background-color: #444444;
+  border-radius: 0.125rem;
+}
+
+.blockedrow {
+  display: flex;
+  align-items: center;
+}
+
+.blockedicon {
+  margin-right: 0.75rem;
+}
+
+.blockedtext {
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.blockedhint {
+  margin: 0 0.5em;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: #888888;
+  padding-top: 0.25rem;
+}
+
+.blockedhint a, .blockedhint a:visited, .blockedhint a:active {
+  color: #888888;
+}
+
+.hint {
+  text-align: center;
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #888888;
+}
+
+.hinticon {
+  margin-top: 0.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.progresssection {
+  border-top: 1px solid #888888;
+}
+
+.progressinner {
+  max-width: 40rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 0.75rem;
+}
+
+.progresstrack {
+  height: 0.75rem;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.progresslimit {
+  height: 100%;
+  position: absolute;
+  background-color: #444444;
+  overflow: hidden;
+}
+
+.progressfill {
+  height: 100%;
+  position: absolute;
+  background-color: #71c778;
+}
+
+.endlinelight {
+  background-color: #888888;
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+}
+
+.endlinedark {
+  background-color: #444444;
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+}
+
+.tick {
+  width: 1px;
+  height: 100%;
+  position: absolute;
+}
+
+.tickpast {
+  background-color: #1b1b1b;
+}
+
+.tickfuture {
+  background-color: #444444;
+}
+
+.tickcurrent {
+  background-color: #888888;
+}
+
+.controlssection {
+  border-top: 1px solid #888888;
+}
+
+.controlsinner {
+  max-width: 40rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 0.75rem;
+}
+
+.controlsrow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.timewrap {
+  display: flex;
+  align-items: center;
+}
+
+.playwrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.25rem;
+}
+
+.playcircle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  height: 3.5rem;
+  width: 3.5rem;
+  border: 0.25rem solid #e5e7eb;
+  border-radius: 1000em;
+  position: relative;
+  overflow: hidden;
+}
+
+.loadbarwrap {
+  position: relative;
+  z-index: 10;
+}
+
+.playiconwrap {
+  margin-left: 0.25rem;
+  position: relative;
+  z-index: 10;
+}

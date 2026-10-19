@@ -1,0 +1,18 @@
+.text {
+  color: #ffffff;
+}
+
+.paragraph {
+  margin: 0 0 0.75rem;
+}
+
+.small {
+  margin: 0 0 0.75rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: #888888;
+}
+
+.small a, .small a:visited, .small a:active {
+  color: #888888;
+}
